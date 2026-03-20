@@ -1,15 +1,13 @@
-CC = gcc
-CFLAGS = -Wall -Werror -O2
-TARGET = DATEditor
-
-all: main.o
-	$(CC) -o $(TARGET) main.o
-
-main.o: main.c
-	$(CC) $(CFLAGS) -c main.c
-
-
-.PHONY: clean
-
-clean:
-	-rm -f *.o $(TARGET)
+Protocol: NEC
+Address: 0E0E0
+Power:      040BF
+Volume +:   0E01F
+Volume -:   0D02F
+Mute:       0F00F
+Source:     0807F
+Menu:       058A7
+Up:         006F9
+Down:       08679
+Left:       0A659
+Right:      046B9
+OK/Enter:   016E9
